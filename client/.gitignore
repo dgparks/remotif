@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+package-lock.json
+
+# build
+build
+
+# data
+src/assets
+
+# firebase
+.firebaserc
+.firebase
+
+# variables
+.env
+.babelrc
+babel.config.json
+src/config.js

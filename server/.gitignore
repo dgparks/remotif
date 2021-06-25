@@ -1,0 +1,11 @@
+jobscraper/__pycache__
+jobscraper/spiders/__pycache__
+venv
+logs
+logos
+*.json
+archive
+*.txt
+jobscraper.sh
+06_mongo_import.exp
+__pycache__

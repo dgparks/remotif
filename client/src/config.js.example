@@ -1,0 +1,21 @@
+const config = {
+    basename: '',
+    defaultPath: '/jobs',
+    fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+    borderRadius: 12,
+    outlinedFilled: true,
+    theme: 'light',
+    i18n: 'en',
+    rtlLayout: false,
+    firebase: {
+        apiKey: "",
+        authDomain: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+        measurementId: ""
+    },
+};
+
+export default config;
