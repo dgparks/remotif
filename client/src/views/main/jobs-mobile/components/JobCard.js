@@ -1,39 +1,17 @@
-// import { FixedSizeList as List } from "react-window";
-// import InfiniteLoader from "react-window-infinite-loader";
-// material-ui
 import {
-    // Button,
     Card,
     Grid,
     LinearProgress,
     makeStyles,
-    // Table,
-    // TableBody,
-    // TableCell,
-    // TableRow,
     Typography
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-// project imports
 import { gridSpacing } from '../../../../store/constant';
-// import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-// import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import SaveJobButton from './SaveJobButton';
 
-
-
-
 const useStyles = makeStyles((theme) => ({
-    root: {
-        // width: 'calc(100vw - 82px) !important',
-        padding: '0px'
-    },
-    content: {
-        // width: 'calc(100vw - 82px)',
-        padding: '0px'
-    },
     successBadge: {
         color: theme.palette.success.dark,
         width: '14px',
@@ -49,52 +27,9 @@ const useStyles = makeStyles((theme) => ({
         paddingRight: '4px',
         width: '100%',
         minWidth: '120px',
-        // '&:hover': {
-        //     background: theme.palette.secondary.main,
-        //     borderColor: theme.palette.secondary.main,
-        //     color: '#fff'
-        // }
-    },
-    tableResponsive: {
-        // overflowX: 'auto',
-        // overflowY: 'scroll',
-        // width: 'calc(100vw - 82px) !important',
-    },
-    profileTable: {
-        width: 'calc(100vw - 82px) !important',
-        '& td': {
-            whiteSpace: 'nowrap'
-        },
-        '& td:first-child': {
-            paddingLeft: '0px'
-        },
-        '& td:last-child': {
-            paddingRight: '0px',
-            minWidth: '260px'
-        },
-        '& tbody tr:last-child  td': {
-            borderBottom: 'none'
-        },
-        [theme.breakpoints.down('lg')]: {
-            '& tr:not(:last-child)': {
-                borderBottom: '1px solid',
-                borderBottomColor: theme.palette.mode === 'dark' ? 'rgb(132, 146, 196, .2)' : 'rgba(224, 224, 224, 1)'
-            },
-            '& td': {
-                display: 'inline-block',
-                borderBottom: 'none',
-                paddingLeft: '0px'
-            },
-            '& td:first-child': {
-                display: 'block'
-            }
-        }
     },
     tableSubContent: {
         whiteSpace: 'break-spaces'
-    },
-    tableRow: {
-        width: 'calc(100vw - 82px) !important'
     },
     sidebyside: {
         width: 'calc((100vw - 64px) * 0.5)',

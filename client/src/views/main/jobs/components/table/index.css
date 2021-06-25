@@ -1,224 +1,174 @@
 .lightmode {
   --rgt-border-color: #ede7f6;
-  --rgt-border: 1px solid #ede7f6;
+  --rgt-border: 1px solid #ede7f6
 }
 
 .darkmode {
   --rgt-background-color: #1a223f;
   --rgt-border-color: #1a223f;
-  --rgt-border: 1px solid #1a223f;
+  --rgt-border: 1px solid #1a223f
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .lightmode body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: #515357 !important;
-    overflow: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  box-sizing: border-box
+}
 
-  .darkmode body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: #bdc8f0 !important;
-    overflow: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+#root, html {
+  width: 100%;
+  height: 100%
+}
 
-  .rgt-wrapper {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: calc(100%) !important;
-    height: calc(100vh - 142px) !important;
-    min-height: 388px;
-    border: var(--rgt-border);
-  }
-  
-  #root {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .lightmode .jobsTable {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* background-color: #ffa69eAA; */
-    /* background-color: #861657;
-    background-image: linear-gradient(326deg, #861657, #ffa69e 74%); */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    border-radius: 8px;
-  }
+.lightmode body {
+  margin: 0;
+  color: #515357!important
+}
 
-  .darkmode .jobsTable {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* background-color: #ffa69eAA; */
-    /* background-color: #861657;
-    background-image: linear-gradient(326deg, #861657, #ffa69e 74%); */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    border-radius: 8px;
-  }
-  
-  .jobsTable ::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-  }
-  
-  .jobsTable ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #f5f5f5;
-  }
-  
-  .jobsTable ::-webkit-scrollbar-thumb {
-    background-color: #ddd;
-    border: 2px solid #d8d8d8;
-  }
+.darkmode .jobsTable, .darkmode body, .lightmode .jobsTable, .lightmode body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
 
+.darkmode body {
+  margin: 0;
+  color: #bdc8f0!important
+}
 
-  .darkmode .jobsTable ::-webkit-scrollbar-track {
-    background-color: #29304a;
-  }
-  
-  .darkmode .jobsTable ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #29304a;
-  }
-  
-  .darkmode .jobsTable ::-webkit-scrollbar-thumb {
-    background-color: #212946 ;
-    border: 2px solid #3e455c;
-  }
+.rgt-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100%)!important;
+  height: calc(100vh - 142px)!important;
+  min-height: 388px;
+  border: var(--rgt-border)
+}
 
-  .darkmode .jobsTable ::-webkit-scrollbar-corner {
-    background: #212946;
-  }
+.darkmode .jobsTable, .lightmode .jobsTable {
+  display: flex;
+  border-radius: 8px
+}
 
-  .darkmode .rgt-footer-page-input {
-    color: #bdc8f0;
-    background-color: #3e455c;
-  }
+.jobsTable ::-webkit-scrollbar-track {
+  background-color: #f5f5f5
+}
 
-  .darkmode .rgt-footer-page-size-select {
-    color: #bdc8f0;
-    background-color: #3e455c;
-  }
-  
+.jobsTable ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5
+}
+
+.jobsTable ::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border: 2px solid #d8d8d8
+}
+
+.darkmode .jobsTable ::-webkit-scrollbar-track {
+  background-color: #29304a
+}
+
+.darkmode .jobsTable ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #29304a
+}
+
+.darkmode .jobsTable ::-webkit-scrollbar-thumb {
+  background-color: #212946;
+  border: 2px solid #3e455c
+}
+
+.darkmode .jobsTable ::-webkit-scrollbar-corner {
+  background: #212946
+}
+
+.darkmode .rgt-footer-page-input, .darkmode .rgt-footer-page-size-select {
+  color: #bdc8f0;
+  background-color: #3e455c
+}
+
+.tableWrapper {
+  height: 100%;
+  overflow: auto;
+  flex: 1;
+  margin: 0
+}
+
+.rgt-cell:not(.rgt-row-edit):not(.rgt-row-not-selectable) {
+  cursor: pointer
+}
+
+.darkmode .rgt-container {
+  background: #111936!important
+}
+
+.darkmode {
+  border-color: #111936!important
+}
+
+.darkmode .rgt-cell, .darkmode .rgt-cell-header-inner, .darkmode .rgt-footer {
+  background: #212946!important
+}
+
+.rgt-row-selected {
+  background: #f3f6f9!important
+}
+
+.lightmode .rgt-row-hover {
+  background: #f7f7f7!important
+}
+
+.darkmode .rgt-row-hover {
+  background: #29304a!important
+}
+
+.settingsDrawer input[type=checkbox] {
+  cursor: pointer
+}
+
+.settingsDrawer input[type=number], .settingsDrawer input[type=text], .settingsDrawer select {
+  background: #eef2f5;
+  outline: 0;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 120px
+}
+
+@media (min-width:1025px) {
   .tableWrapper {
-    height: 100%;
-    /* padding: 20px; */
-    overflow: auto;
-    flex: 1;
-    margin: 0;
+    padding: 0
   }
-  
-  .rgt-cell:not(.rgt-row-edit):not(.rgt-row-not-selectable) {
-    cursor: pointer;
+  .settingsDrawer {
+    position: unset!important;
+    transform: translate3d(0, 0, 0)!important
   }
-
-  .darkmode .rgt-container {
-    background: #111936 !important;
+  .settingsDrawerButton {
+    display: none!important
   }
-
-  .darkmode {
-    border-color: #111936 !important;
-  }
-
-  .darkmode .rgt-cell,
-  .darkmode .rgt-cell-header-inner,
-  .darkmode .rgt-footer {
-    background: #212946 !important;
-  }
-  
-  .rgt-row-selected {
-    background: #f3f6f9 !important;
-  }
-  
-  .lightmode .rgt-row-hover {
-    background: #f7f7f7 !important;
-  }
-
-  .darkmode .rgt-row-hover {
-    background: #29304a !important;
-  }
-
-  .settingsDrawer input[type="checkbox"] {
-    cursor: pointer;
-  }
-  
-  .settingsDrawer input[type="text"],
-  .settingsDrawer input[type="number"],
-  .settingsDrawer select {
-    background: #eef2f5;
-    outline: none;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    width: 120px;
-  }
-  
-  @media (min-width: 1025px) {
-    .tableWrapper {
-      padding:0;
-    }
-    .settingsDrawer {
-      position: unset !important;
-      transform: translate3d(0px, 0px, 0px) !important;
-    }
-    .settingsDrawerButton {
-      display: none !important;
-    }
-  }
+}
 
 .lightmode .rgt-footer-pagination-button {
-  background: #673ab7 !important;
+  background: #673ab7!important
 }
 
 .darkmode .rgt-footer-pagination-button {
-  background: #2196f3 !important;
+  background: #2196f3!important
 }
 
 .lightmode .total-job-count {
-  color: #673ab7 !important;
+  color: #673ab7!important
 }
 
 .darkmode .total-job-count {
-  color: #2196f3 !important;
+  color: #2196f3!important
 }
 
-.lightmode .rgt-placeholder-cell {
+.darkmode .rgt-placeholder-cell, .lightmode .rgt-placeholder-cell {
   position: relative;
   border-radius: 2px;
   height: 20px;
@@ -226,10 +176,10 @@
   display: inline-block;
   margin: 0 20px;
   overflow: hidden;
-  background-color: #eee;
+  background-color: #eee
 }
 
-.lightmode .rgt-placeholder-cell::after {
+.darkmode .rgt-placeholder-cell::after, .lightmode .rgt-placeholder-cell::after {
   content: "";
   position: absolute;
   top: 0;
@@ -237,41 +187,14 @@
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.2) 20%,
-    rgba(255, 255, 255, 0.5) 60%,
-    rgba(255, 255, 255, 0)
-  );
-  animation: loading 1.5s infinite;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 20%, rgba(255, 255, 255, .5) 60%, rgba(255, 255, 255, 0));
+  animation: loading 1.5s infinite
 }
 
 .darkmode .rgt-placeholder-cell {
-  position: relative;
-  border-radius: 2px;
-  height: 20px;
-  width: 100%;
-  display: inline-block;
-  margin: 0 20px;
-  overflow: hidden;
-  background-color: #29304a;
+  background-color: #29304a
 }
 
 .darkmode .rgt-placeholder-cell::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  background-image: linear-gradient(
-    90deg,
-    rgba(21, 24, 37, 0) 0,
-    rgba(21, 24, 37, 0.2) 20%,
-    rgba(21, 24, 37, 0.5) 60%,
-    rgba(21, 24, 37, 0)
-  );
-  animation: loading 1.5s infinite;
+  background-image: linear-gradient(90deg, rgba(21, 24, 37, 0) 0, rgba(21, 24, 37, .2) 20%, rgba(21, 24, 37, .5) 60%, rgba(21, 24, 37, 0))
 }

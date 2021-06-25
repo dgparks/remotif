@@ -21,15 +21,6 @@ const useStyles = makeStyles((theme) => ({
             width: '0px'
         },
     },
-    homeButton: {
-        marginLeft: '6px',
-        marginTop: '18px',
-        transition: 'all .2s ease-in-out',
-        background: theme.palette.mode === 'dark' ? '' : theme.palette.background.default,
-        [theme.breakpoints.down('lg')]: {
-            marginRight: '12px',
-        },
-    },
     middleContainer: {
         minWidth: '60%',
         height: 'calc(100vh - 142px)',

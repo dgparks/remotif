@@ -1,8 +1,6 @@
-import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core';
-import { IconButton, Typography } from '@material-ui/core';
+import { IconButton, makeStyles, Typography, useTheme } from '@material-ui/core';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-// import { IconArrowBigTop } from '@tabler/icons';
+import React from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 const useStyles = makeStyles((theme) => ({
@@ -20,9 +18,7 @@ const useStyles = makeStyles((theme) => ({
     jobsFound: {
     },
     arrowButton:{
-        // marginLeft: '6px',
         width: '48px',
-        // marginTop: '18px',
         transition: 'all .2s ease-in-out',
         background: theme.palette.mode === 'dark' ? '' : theme.palette.background.default,
         ['@media(hover)']: {
@@ -30,24 +26,10 @@ const useStyles = makeStyles((theme) => ({
                 background: theme.palette.mode === 'dark' ? theme.palette.dark.main : '#e3f2fd',
             },
         },
-        // color: theme.palette.mode === 'dark' ? theme.palette.error.light : theme.palette.error.light,
-        // '&[aria-controls="menu-list-grow"],&:hover': {
-        //     background: theme.palette.mode === 'dark' ? theme.palette.dark.main : theme.palette.orange.light,
-        // }
-        // [theme.breakpoints.down('lg')]: {
-        //     marginRight: '12px',
-        // },
         [theme.breakpoints.down('sm')]: {
             marginLeft: '0px',
         },
     },
-    arrow: {
-        padding: '2px',
-        color: theme.palette.mode === 'dark' ? '#8492c4' : '#515357',
-        border: '1px solid',
-        borderColor: theme.palette.mode === 'dark' ? '#8492c4' : '#515357',
-        borderRadius: '50%',
-    }
 }));
 
 const MobileFooter = ({ numTotalHits, jobsmobileRef }) => {

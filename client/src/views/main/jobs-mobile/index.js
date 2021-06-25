@@ -17,12 +17,6 @@ const useStyles = makeStyles((theme) => ({
         bottom: 0,
         backgroundColor: theme.palette.background.default
     },
-    appBarWidthBottom: {
-        top: 'auto',
-        bottom: 0,
-        transition: theme.transitions.create('width'),
-        backgroundColor: theme.palette.background.default
-    },
     divider: {
         borderColor: theme.palette.mode === 'light' ? '#d1d3d7' : ''
     }
@@ -76,8 +70,6 @@ const JobsMobile = ({ headerSearchText, sidebarFilters, ...props }) => {
 
     return (
         <div>
-        {/* <div><Typography noWrap style={{ marginLeft: '6px' }} align="left" variant="subtitle1">Search Results</Typography></div>
-        <Divider className={classes.divider} style={{ margin: '6px', marginTop: '-2px' }} /> */}
         <MainCard className={classes.root} id="jobsmobile" ref={jobsmobileRef} contentSX={{padding: '0px'}} sx={{ border: 'none', backgroundColor: cardColor }}>
             <JobList hit_ids={hitIds} numTotalHits={numTotalHits} numPages={numPages} getHits={getHits} page={props.page} />
             <AppBar position="fixed" className={classes.appBarBottom}>

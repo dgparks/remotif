@@ -17,12 +17,6 @@ const useStyles = makeStyles((theme) => ({
         bottom: 0,
         backgroundColor: theme.palette.background.default
     },
-    appBarWidthBottom: {
-        top: 'auto',
-        bottom: 0,
-        transition: theme.transitions.create('width'),
-        backgroundColor: theme.palette.background.default
-    },
 }));
 
 //-----------------------|| USER LIST STYLE 2 ||-----------------------//

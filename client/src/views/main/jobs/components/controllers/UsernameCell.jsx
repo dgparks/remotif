@@ -17,20 +17,6 @@ const styles = {
         maxWidth: 24,
         borderRadius: '9999px'
     },
-    input: {
-        position: 'absolute',
-        height: 28,
-        width: 'calc(100% - 82px)',
-        top: 10,
-        right: 20,
-        bottom: 0,
-        border: 'none',
-        borderBottom: '1px solid #eee',
-        outline: 'none',
-        fontSize: 16,
-        padding: 0,
-        fontFamily: 'inherit'
-    },
     text: {
         marginLeft: 10,
         whiteSpace: 'nowrap',

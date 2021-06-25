@@ -1,14 +1,11 @@
-import React from 'react';
-
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ls from 'local-storage'
-
 import { Checkbox, makeStyles } from '@material-ui/core';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import ls from 'local-storage';
+import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
     savebutton: {
-        // marginLeft: '6px',
         marginTop: '10px',
         height: '48px',
         width: '48px',
@@ -19,9 +16,6 @@ const useStyles = makeStyles((theme) => ({
             '&[aria-controls="menu-list-grow"],&:hover': {
                 background: theme.palette.mode === 'dark' ? theme.palette.dark.main : theme.palette.orange.light,
             },
-        },
-        [theme.breakpoints.down('lg')]: {
-            // marginRight: '12px',
         },
     },
 }));
@@ -52,10 +46,6 @@ const SaveJobButton = ({ _id }) => {
         }
         
     };
-
-    // if (!data){
-    //     return <div />
-    // }
 
     return (
         <Checkbox

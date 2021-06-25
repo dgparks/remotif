@@ -8,12 +8,6 @@ import BreadcrumbsSavedJobs from '../../../ui-component/BreadcrumbsSavedJobs';
 import SavedJobsMobile from '../saved-jobs-mobile';
 import SavedJobsTable from './components/SavedJobsTable';
 
-// material-ui
-// import { Typography } from '@material-ui/core';
-
-// project imports
-// import MainCard from '../../ui-component/cards/MainCard';
-
 // style constant
 const useStyles = makeStyles((theme) => ({
     blank: {
